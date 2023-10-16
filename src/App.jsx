@@ -56,7 +56,7 @@ function App() {
       
 
     } else {
-        if (rollNumber < bestScore || bestScore === null) {
+        if (rollNumber <= bestScore || bestScore === null) {
           setBestScore(rollNumber);
           localStorage.setItem("bestScore", JSON.stringify(rollNumber));
         }
